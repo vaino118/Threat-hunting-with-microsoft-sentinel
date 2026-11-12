@@ -1,1 +1,30 @@
+# Environment Setup
 
+## Overview
+
+This section documents the configuration of the cloud-based threat hunting environment using Microsoft Azure.
+
+## Infrastructure Configuration
+
+The lab environment consists of:
+
+- Microsoft Azure subscription.
+- Windows 10 virtual machine hosted in Azure.
+- Azure Arc Connected Machine Agent.
+- Azure Monitor Agent (AMA).
+- Log Analytics Workspace.
+- Microsoft Sentinel.
+
+## Endpoint Configuration
+
+The Windows 10 virtual machine was configured with Sysmon to capture detailed system activity, including process creation and other endpoint events.
+
+## Security Monitoring
+
+Microsoft Sentinel was enabled using the Log Analytics Workspace to support centralised security event monitoring and threat hunting.
+
+Azure Monitor Agent and Data Collection Rules were configured to collect the required endpoint logs.
+
+## Purpose
+
+The environment provides the infrastructure required to perform practical threat hunting, analyse endpoint activity and investigate suspicious security events.
