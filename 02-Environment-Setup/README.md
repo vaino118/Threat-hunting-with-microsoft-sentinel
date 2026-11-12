@@ -19,7 +19,7 @@ A Windows 10 virtual machine was deployed in Microsoft Azure.
 
 ## 4. Security Monitoring
 - **Azure Arc** and **Azure Monitor Agent** were configured to support machine management and log collection.
-- **Data Collection Rules (DCRs)** were configured to define the events collected from the endpoint. *(Note: Due to Student subscription UI restrictions, the DCR for Sysmon was successfully deployed via Azure CLI/Cloud Shell).*
+- **Data Collection Rules (DCRs)** were configured to define the events collected from the endpoint. 
 - **Microsoft Sentinel** was used to monitor and analyse the collected security events.
 
 ## 5. Objective
