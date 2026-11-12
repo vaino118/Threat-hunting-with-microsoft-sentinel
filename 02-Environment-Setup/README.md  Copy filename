@@ -1,30 +1,34 @@
 # Environment Setup
 
-## Overview
+## 1. Overview
 
-This section documents the configuration of the cloud-based threat hunting environment using Microsoft Azure.
+This section describes the setup of the Microsoft Azure environment used for the threat hunting project.
 
-## Infrastructure Configuration
+## 2. Azure Infrastructure
 
-The lab environment consists of:
+The following components were configured:
 
-- Microsoft Azure subscription.
-- Windows 10 virtual machine hosted in Azure.
-- Azure Arc Connected Machine Agent.
-- Azure Monitor Agent (AMA).
-- Log Analytics Workspace.
-- Microsoft Sentinel.
+- Microsoft Azure
+- Windows 10 Virtual Machine
+- Azure Arc
+- Azure Monitor Agent (AMA)
+- Log Analytics Workspace
+- Microsoft Sentinel
 
-## Endpoint Configuration
+## 3. Endpoint Configuration
 
-The Windows 10 virtual machine was configured with Sysmon to capture detailed system activity, including process creation and other endpoint events.
+A Windows 10 virtual machine was deployed in Microsoft Azure.
 
-## Security Monitoring
+Sysmon was installed to monitor endpoint activities and generate detailed system event logs.
 
-Microsoft Sentinel was enabled using the Log Analytics Workspace to support centralised security event monitoring and threat hunting.
+## 4. Security Monitoring
 
-Azure Monitor Agent and Data Collection Rules were configured to collect the required endpoint logs.
+Azure Arc and Azure Monitor Agent were configured to support machine management and log collection.
 
-## Purpose
+Data Collection Rules (DCRs) were configured to define the events collected from the endpoint.
 
-The environment provides the infrastructure required to perform practical threat hunting, analyse endpoint activity and investigate suspicious security events.
+Microsoft Sentinel was used to monitor and analyse the collected security events.
+
+## 5. Objective
+
+The purpose of this environment was to establish a centralised security monitoring platform for conducting threat hunting and investigating suspicious endpoint activities.
