@@ -5,7 +5,7 @@ This section describes the setup of the Microsoft Azure environment used for the
 
 ## 2. Azure Infrastructure
 The following components were configured:
-- **Microsoft Azure** (Student Subscription)
+- **Microsoft Azure** 
 - **Windows 10 Virtual Machine** (Target Endpoint)
 - **Azure Arc** (Hybrid server management)
 - **Azure Monitor Agent (AMA)** (Log collection)
